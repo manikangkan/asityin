@@ -6,7 +6,7 @@ function HeaderLink({ Icon, text, feed, active, avatar, hidden }) {
   return (
     <div
       className={`cursor-pointer flex flex-col justify-center items-center space-y-2 ${
-        hidden && "hidden lg:inline-flex"
+        hidden && "hidden sm:inline-flex"
       } ${
         feed
           ? "text-black/50 hover:text-black dark:text-white/50 dark:hover:text-white"

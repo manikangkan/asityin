@@ -62,13 +62,13 @@ const Modal = ({ handleClose, type }) => {
       {type === "dropIn" && (
         <motion.div
           onClick={(e) => e.stopPropagation()}
-          className="rounded-md flex flex-col justify-center bg-white dark:bg-[#1D2226] w-full max-w-lg"
+          className="rounded-md flex flex-col justify-center bg-white dark:bg-[#1D2226] w-full max-w-lg mx-2"
           variants={dropIn}
           initial="hidden"
           animate="visible"
           exit="exit">
-          <div className="flex items-center justify-between border-b dark:border-gray-700 px-8 py-2">
-            <h4 className="font-semibold">Create a post</h4>
+          <div className="flex items-center justify-between border-b dark:border-gray-700 p-2">
+            <h4 className="font-semibold pl-4">Create a post</h4>
             <IconButton onClick={handleClose}>
               <CloseRoundedIcon className="h-6 w-6 dark:text-white/75" />
             </IconButton>
@@ -88,7 +88,7 @@ const Modal = ({ handleClose, type }) => {
       {type === "gifYouUp" && (
         <motion.div
           onClick={(e) => e.stopPropagation()}
-          className="rounded-lg flex flex-col lg:flex-row bg-[#1D2226] max-w-5xl m-6 overflow-hidden"
+          className="rounded-lg flex flex-col lg:flex-row bg-[#1D2226] max-w-5xl mx-6 overflow-hidden"
           variants={gifYouUp}
           initial="hidden"
           animate="visible"
@@ -96,7 +96,7 @@ const Modal = ({ handleClose, type }) => {
           <motion.img
             src={post.photoUrl}
             alt="modal image"
-            className="w-1/2 object-cover"
+            className="h-96 object-cover"
             onDoubleClick={handleClose}
           />
           <Post post={post} modalPost />

@@ -17,19 +17,17 @@ function Widgets({ articles }) {
           {/* articles */}
           {articles.slice(0, 5).map((article) => (
             <article
-              className="flex items-center w-full cursor-pointer hover:bg-gray-100 dark:hover:bg-black/20 space-y-4 p-4"
+              className="flex items-center w-full cursor-pointer hover:bg-gray-100 dark:hover:bg-black/20 px-4 py-2 space-x-4"
               key={article.url}>
-              <div className="flex items-center space-x-4">
-                <FiberManualRecordRoundedIcon className="!h-2 !w-2" />
-                <div>
-                  <h5 className="font-medium text-sm w-1/3 truncate">
-                    {article.title}
-                  </h5>
-                  <TimeAgo
-                    datetime={article.publishedAt}
-                    className="text-xs dark:text-white/75 opacity-80"
-                  />
-                </div>
+              <FiberManualRecordRoundedIcon className="!h-2 !w-2" />
+              <div>
+                <h5 className="font-medium text-sm w-60 truncate">
+                  {article.title}
+                </h5>
+                <TimeAgo
+                  datetime={article.publishedAt}
+                  className="text-xs dark:text-white/75 opacity-80"
+                />
               </div>
             </article>
           ))}

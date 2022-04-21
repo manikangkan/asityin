@@ -34,7 +34,7 @@ export default function Home({ posts, articles }) {
       <Header />
 
       {/* main stuff */}
-      <main className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 md:gap-x-4 p-4 xl:px-0">
+      <main className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 md:gap-x-4 py-2 md:p-4 xl:px-0">
         <Sidebar />
         <Feed posts={posts} />
         <Widgets articles={articles} />

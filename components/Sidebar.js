@@ -8,10 +8,10 @@ function Sidebar() {
   const { data: session } = useSession();
 
   return (
-    <div className="col-span-1 mb-4 lg:mb-0">
+    <div className="col-span-1 mb-2">
       <div className="space-y-4 sticky top-20">
         {/* Top section*/}
-        <section className="bg-white dark:bg-[#1D2226] rounded-md overflow-hidden relative flex flex-col items-center text-center dark:border-none">
+        <section className="bg-white dark:bg-[#1D2226] md:rounded-md overflow-hidden relative flex flex-col items-center text-center dark:border-none">
           <div className="relative w-full h-16">
             <Image src="https://rb.gy/i26zak" layout="fill" priority />
           </div>

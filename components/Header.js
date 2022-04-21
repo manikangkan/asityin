@@ -52,7 +52,7 @@ function Header() {
             </>
           )}
 
-          <div className="flex items-center space-x-1 bg-gray-100 dark:bg-gray-800 py-2 px-4 rounded-md w-3/4">
+          <div className="flex items-center space-x-1 bg-gray-100 dark:bg-gray-800 py-2 px-4 rounded-md md:w-3/4">
             <SearchRoundedIcon className="dark:text-white/50" />
             <input
               type="text"
@@ -68,9 +68,14 @@ function Header() {
             <HeaderLink Icon={HomeRoundedIcon} text="Home" feed active />
             <HeaderLink Icon={GroupIcon} text="My Network" feed />
             <HeaderLink Icon={BusinessCenterIcon} text="Jobs" feed hidden />
-            <HeaderLink Icon={ChatIcon} text="Messaging" feed />
-            <HeaderLink Icon={NotificationsIcon} text="Notifications" feed />
-            <HeaderLink Icon={Avatar} text="Me" feed avatar hidden />
+            <HeaderLink Icon={ChatIcon} text="Messaging" feed hidden />
+            <HeaderLink
+              Icon={NotificationsIcon}
+              text="Notifications"
+              feed
+              hidden
+            />
+            <HeaderLink Icon={Avatar} text="Me" feed avatar />
             <HeaderLink Icon={AppsOutlinedIcon} text="Work" feed hidden />
 
             {/* Dark mode toggle */}

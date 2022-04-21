@@ -24,7 +24,7 @@
   }
 
   .inputButton {
-    @apply flex items-center justify-center space-x-2 cursor-pointer text-sm;
+    @apply flex items-center justify-center space-x-2 cursor-pointer text-sm font-medium;
   }
 
   .postButton {
@@ -32,27 +32,6 @@
   }
 }
 
-
-*{
+* {
   font-family: Inter;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 100px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

@@ -14,16 +14,15 @@ function Input() {
   const [modalType, setModalType] = useRecoilState(modalTypeState);
 
   return (
-    <div className="bg-white dark:bg-[#1D2226] rounded-md p-4 space-y-4 dark:border-none">
+    <div className="bg-white dark:bg-[#1D2226] md:rounded-md p-4 space-y-4 dark:border-none">
       <div className="flex items-center space-x-2">
         <Avatar
           src={session?.user?.image}
           className="!h-10 !w-10 cursor-pointer"
         />
         <motion.button
-          whileHover={{ scale: 1.01 }}
           whileTap={{ scale: 0.99 }}
-          className="rounded-full border border-gray-100 dark:border-gray-700 py-2 px-6 opacity-80 hover:opacity-100 text-sm w-full text-left"
+          className="rounded-full border border-gray-100 dark:border-gray-700 py-2 px-6 opacity-80 hover:opacity-100 text-sm w-full text-left font-medium"
           onClick={() => {
             setModalOpen(true);
             setModalType("dropIn");
@@ -34,21 +33,19 @@ function Input() {
       <div className="flex items-center justify-around flex-wrap space-x-4">
         <button className="inputButton">
           <PhotoSizeSelectActualIcon className="text-blue-400" />
-          <h4 className="opacity-80 ">Photo</h4>
+          <h4 className="opacity-80 hidden sm:block">Photo</h4>
         </button>
         <button className="inputButton">
           <VideoCameraBackIcon className="text-green-400" />
-          <h4 className="opacity-80">Video</h4>
+          <h4 className="opacity-80 hidden sm:block">Video</h4>
         </button>
         <button className="inputButton">
           <BusinessCenterIcon className="text-blue-300" />
-          <h4 className="opacity-80">Job</h4>
+          <h4 className="opacity-80 hidden sm:block">Job</h4>
         </button>
         <button className="inputButton">
           <ArticleIcon className="text-red-400" />
-          <h4 className="opacity-80">
-            Write Article
-          </h4>
+          <h4 className="opacity-80 hidden sm:block">Write Article</h4>
         </button>
       </div>
     </div>

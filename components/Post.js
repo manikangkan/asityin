@@ -37,10 +37,7 @@ function Post({ post, modalPost }) {
   };
 
   return (
-    <div
-      className={`bg-white dark:bg-[#1D2226] ${
-        modalPost ? "rounded-r-md" : "rounded-md"
-      } py-4 dark:border-none`}>
+    <div className="bg-white md:rounded-md dark:bg-[#1D2226] py-4 dark:border-none">
       <div className="flex items-center justify-between px-4 cursor-pointer">
         <div className="flex items-center">
           <Avatar src={post.userImg} className="!h-10 !w-10 cursor-pointer" />
@@ -109,23 +106,23 @@ function Post({ post, modalPost }) {
             <ThumbUpOffAltOutlinedIcon className="" />
           )}
 
-          <h4>Like</h4>
+          <h4 className="hidden sm:block">Like</h4>
         </button>{" "}
         <button className="postButton">
           <CommentOutlinedIcon />
-          <h4>Comment</h4>
+          <h4 className="hidden sm:block">Comment</h4>
         </button>
         {session?.user?.email === post.email ? (
           <button
             className="postButton focus:text-red-400"
             onClick={deletePost}>
             <DeleteRoundedIcon />
-            <h4>Delete post</h4>
+            <h4 className="hidden sm:block">Delete post</h4>
           </button>
         ) : (
           <button className="postButton ">
             <ReplyRoundedIcon className="-scale-x-100" />
-            <h4>Share</h4>
+            <h4 className="hidden sm:block">Share</h4>
           </button>
         )}
       </div>

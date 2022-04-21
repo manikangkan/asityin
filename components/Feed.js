@@ -26,7 +26,7 @@ function Feed({ posts }) {
   }, [handlePost]);
 
   return (
-    <div className="col-span-2 xl:col-span-2 space-y-4">
+    <div className="col-span-2 xl:col-span-2 space-y-2 md:space-y-4">
       <Input />
       {/* Posts */}
       {!useSSRPosts
