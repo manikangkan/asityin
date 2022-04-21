@@ -59,15 +59,15 @@ function Login({ providers }) {
           <div className="space-y-2">
             <div className="intent">
               <h2 className="font-semibold">Search for a job</h2>
-              <ArrowForwardIosRoundedIcon className="text-sm" />
+              <ArrowForwardIosRoundedIcon className="!text-sm" />
             </div>
             <div className="intent">
               <h2 className="font-semibold">Find a person you know</h2>
-              <ArrowForwardIosRoundedIcon className="text-sm" />
+              <ArrowForwardIosRoundedIcon className="!text-sm" />
             </div>
             <div className="intent">
               <h2 className="font-semibold">Learn a new skill</h2>
-              <ArrowForwardIosRoundedIcon className="text-sm" />
+              <ArrowForwardIosRoundedIcon className="!text-sm" />
             </div>
           </div>
         </div>
