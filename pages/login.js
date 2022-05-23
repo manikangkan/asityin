@@ -76,7 +76,7 @@ function Login({ providers }) {
           <Image src="https://rb.gy/vkzpzt" layout="fill" priority />
         </div>
       </main>
-      <p className="text-center mt-64">
+      <p className="text-black text-center mt-64">
         LinkedIn 2.0 developed by{" "}
         <a
           href="https://www.instagram.com/themanikangkandas/"
